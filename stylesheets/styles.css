@@ -1,0 +1,665 @@
+
+/*
+===============
+GLOBAL SETTINGS
+===============
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+==============
+PRIMARY LAYOUT
+==============
+*/
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+================
+SECONDARY LAYOUT
+================
+*/
+
+.header,
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #14b3d9;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.intro-banner,
+.share-banner {
+  background-color: #14b3d9;
+  width: 100%;
+}
+
+.intro-banner {
+  width: 100%;
+  margin-top: 80px;
+  min-height: 520px;
+}
+
+.fp-carousel {
+  width: 100%;
+  min-height: 600px;
+  margin-bottom: 0;
+}
+
+.skills-projects {
+  width: 100%;
+  min-height: 320px;
+  margin-bottom: 80px;
+}
+
+.share-banner {
+  min-height: 580px;
+}
+
+/*
+===============
+TERTIARY LAYOUT
+===============
+*/
+
+.content-block {
+  width: 75%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 75px 0 0;
+  margin: 0 auto;
+}
+
+.header-content-block,
+.footer-content-block {
+  width: 92%;
+  max-width: 1290px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.my-logo,
+.social-nav,
+.copyright-stamp,
+.flatiron-stamp {
+  height: 20px;
+  padding: 30px 0;
+}
+
+.my-logo,
+.copyright-stamp {
+  display: inline-block;
+  float: left;
+}
+
+.social-nav,
+.flatiron-stamp {
+  margin: 0;
+  float: right;
+}
+
+.social-nav li,
+.flatiron-stamp {
+  display: inline-block;
+}
+
+.intro-img-holder {
+  width: 200px; //142.5px;
+  height: 200px; //142.5px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.intro-text-holder {
+  display: block;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.intro-text-holder p {
+  margin: 0;
+}
+
+.fp-text-holder {
+  text-align: center;
+  margin: 0 15%;
+}
+
+.projects-jpg-holder {
+  width: 100%;
+  height: 200px;
+}
+
+.skills-icon-holder {
+  width: 100%;
+  min-height: 320px;
+  padding-top: 75px;
+}
+
+.skills-icon-holder h4 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skills-icon-holder p {
+  display: inline-block;
+  margin: 25px 0 0;
+}
+
+.skills-icon {
+  width: 200px;
+  height: 200px;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.skills-icon img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 77.5px auto 0;
+}
+
+.skills-1 {
+ float: none;
+ margin: 0 auto;
+}
+
+.skills-2 {
+ float: left;
+ width: 50%;
+}
+
+.skills-3 {
+ float: left;
+ width: 33.33333333333333%;
+}
+
+.share-banner .content-block {
+  text-align: center;
+  padding: 195px 20% 0;
+}
+
+/*
+===============
+TEXT TREATMENTS
+===============
+*/
+
+.header {
+  font-size: 1.16666666666667rem;
+}
+
+.footer {
+  font-size: 0.83333333333333rem;
+}
+
+.header,
+.footer,
+.intro-banner,
+.share-banner {
+  color: #fff;
+}
+
+.intro-text-holder,
+.skills-icon-holder {
+  font-size: 1.83333333333333rem;
+}
+
+.intro-text-holder p {
+  line-height: 1.36363636363636em;
+}
+
+.fp-text-holder {
+  font-size: 1rem;
+}
+
+.fp-text-holder h2 {
+  font-size: 1.83333333333333em;
+  font-weight: normal;
+}
+
+.fp-text-holder h2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fp-text-holder p {
+  font-size: 1em;
+  line-height: 1.33333333333333em;
+  margin-bottom: 35px;
+}
+
+.byline {
+  font-style: italic;
+}
+
+.byline a {
+  color: #000;
+  text-decoration: none;
+}
+
+.skills-icon-holder h4 {
+  font-weight: normal;
+}
+
+.skills-icon-holder p {
+  font-size: 0.54545454545454em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.share-banner .content-block h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.share-button {
+  color: #fff;
+  font-size: 0.74rem;
+  line-height: 33.5px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.share-modal a {
+  color: #000;
+  font-size: 0.74rem;
+  text-decoration: none;
+}
+
+.flatiron-stamp a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*
+============
+IMAGE STYLES
+============
+*/
+
+.intro-img-holder img {
+  height: 100%;
+  width: 100%;
+}
+
+.jpg-holder {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+
+.jpg-holder img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.fp-img-holder {
+  width: 100%;
+}
+
+.fp-img-holder img {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+=========
+UI STYLES
+=========
+*/
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 3px;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+}
+
+.social-icon:hover {
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+
+.facebook-icon:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/facebook_icon_white.svg");
+}
+
+.twitter-icon:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/twitter_icon_white.svg");
+}
+
+.github-icon:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/github_icon_white.svg");
+}
+
+.instagram-icon:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/instagram_icon_white.svg");
+}
+
+.scroll-arrow-holder {
+  margin: 95px auto 35px;
+  height: 30px;
+  width: 30px;
+}
+.scroll-arrow {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-arrow:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/icon_downarrow_white.svg");
+}
+
+.fp-text-holder h2:hover {
+  text-decoration: underline;
+}
+
+.byline a:hover {
+  text-decoration: underline;
+}
+
+.slick-active {
+  outline: none;
+}
+
+.slick-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.slick-arrow:before {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 70px;
+}
+
+.slick-prev:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/icon_leftarrow_lightgrey.svg");
+}
+
+.slick-next {
+  right: 70px;
+}
+
+.slick-next:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/icon_rightarrow_lightgrey.svg");
+}
+
+.slick-dots {
+  position: static;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background-color: #333232;
+}
+
+.slick-dots li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.slick-dots li button:before {
+  font-size: 11px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #6c6c6c;
+}
+
+.share-button {
+  display: block;
+  width: 160px;
+  height: 33.5px;
+  padding: 0;
+  margin: 0 auto;
+  border: 1.5px solid #fff;
+  background-color: #14b3d9;
+  border-radius: 5px;
+  outline: none;
+}
+
+.share-modal {
+  position: relative;
+  width: 147px;
+  height: 78px;
+  margin: 20px auto 0;
+  background-color: #fff;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.share-modal:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #fff;
+  right: 46.5%;
+  top: -10%;
+}
+
+.modal-content {
+  display: block;
+  height: 100%;
+  padding: 10px;
+}
+
+.modal-content a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 33.33333333%;
+  padding-left: 28px;
+  margin-top: 1.5px;
+  text-align: left;
+}
+
+.modal-content a span {
+  display: inline-block;
+  margin-top: 1px;
+}
+
+.modal-content a:before {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 2px;
+}
+
+.modal-content a:hover > span {
+  text-decoration: underline;
+}
+
+.share-facebook:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/facebook_icon_grey.svg");
+}
+
+.share-twitter:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/twitter_icon_grey.svg");
+}
+
+.share-email:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/icon_email_grey.svg");
+}
+
+.modal-trigger {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.modal-trigger:hover .share-button {
+  background-color: #fff;
+  color: #14b3d9;
+  border-color: #14b3d9;
+}
+
+.modal-trigger:hover .share-modal {
+  visibility: visible;
+}
+
+/*
+===============
+DYNAMIC CLASSES
+===============
+*/
+
+/* use jQuery to change header styles while scrolling */
+
+.logo-past-waypoint {
+  background-color: #fff;
+  color: #000;
+}
+
+.facebook-past-waypoint:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/facebook_icon_grey.svg");
+}
+
+.twitter-past-waypoint:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/twitter_icon_grey.svg");
+}
+
+.github-past-waypoint:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/github_icon_grey.svg");
+}
+
+.instagram-past-waypoint:before {
+  content: url("https://s3.amazonaws.com/pc-portfolios/shared-assets/instagram_icon_grey.svg");
+}
+
+/* dynamic classes for jpeg holder*/
+
+.img-1 {
+  display: none;
+}
+
+.img-2 .jpg-holder {
+  width: 50%;
+}
+
+.img-3 .jpg-holder {
+  width: 33.33333333333333%;
+}
+
+.img-4 .jpg-holder {
+  width: 25%;
+}
+
+/*
+=============
+MISCELLANEOUS
+=============
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+=============
+MEDIA QUERIES
+=============
+*/
+
+@media only screen and (max-width: 950px) {
+  .content-block {
+    width: 90%;
+  }
+  .fp-carousel .content-block {
+    width: 100%;
+  }
+  .share-banner .content-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .scroll-arrow-holder {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    top: 250px;
+  }
+  .fp-text-holder {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .fp-text-holder {
+    width: 85%;
+    margin: 0 auto 100px;
+  }
+  .projects-jpg-holder {
+    display: none;
+  }
+  .skills-icon {
+    width: 50%;
+  }
+  .skills-3 {
+   width: 100%;
+  }
+}
+
+@media only screen and (max-width: 643px) {
+  .slick-arrow {
+    top: 340px;
+  }
+  .skills-icon {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .slick-arrow {
+    top: 370px;
+  }
+}
